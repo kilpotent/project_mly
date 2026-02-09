@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Garmot;
+    src: url(fonts/GARMOT-GARMOT-REGULAR-400.OTF) format("opentype");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: #9370DB;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 60px 20px 60px;
+    position: relative;
+}
+
+.logo-img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(120px, 25vw, 165px);
+    height: auto;
+    margin-top: -30px;
+}
+
+.menu-bar{
+    display: flex;
+    gap: clamp(10px, 3vw, 60px);
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    margin-bottom: 10px;
+}
+
+.about{
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    margin-bottom: 10px;
+
+}
+
+.menu-bar div {
+    position: relative;
+    padding: 6px 4px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+.menu-bar div::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.menu-bar div:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-img {
+        position: static;
+        transform: none;
+        margin: 10px 0;
+    }
+    .menu-bar {
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .about {
+        margin-bottom: 10px;
+    }
+}
+.intro-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60vh;
+}
+
+.intro {
+    font-size: clamp(3.5rem, 4vw, 2.5rem);
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4 images per row on desktop */
+    gap: 3px;                               /* thin separator line */
+    width: 100%;                            /* full width of the screen */
+    margin: 0;                               /* no side margins */
+}
+
+.portfolio-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Hover effect */
+.portfolio-grid img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Mobile: 1 image per row */
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
