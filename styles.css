@@ -43,6 +43,9 @@ body{
     margin-bottom: 10px;
 
 }
+#about{
+    gap: clamp(20px, 2vw, 60px);;
+}
 
 .menu-bar div {
     position: relative;
