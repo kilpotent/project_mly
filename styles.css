@@ -26,23 +26,17 @@ body{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: clamp(120px, 25vw, 165px);
+    width: clamp(80px, 15vw, 140px);
     height: auto;
     margin-top: -30px;
 }
 
 .menu-bar{
     display: flex;
-    gap: clamp(10px, 3vw, 60px);
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    gap: clamp(10px, 3vw, 60px);    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
     margin-bottom: 10px;
 }
 
-.about{
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
-    margin-bottom: 10px;
-
-}
 #about{
     gap: clamp(20px, 2vw, 60px);;
 }
