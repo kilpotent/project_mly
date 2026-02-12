@@ -5,8 +5,12 @@ const closeBtn = document.querySelector(".close");
 
 images.forEach(img => {
     img.addEventListener("click", () => {
-        modal.style.display = "flex";
-        modalImg.src = img.src;
+        console.log("Clicked image:", img.src);
+
+        const fullImg = img.dataset.full || img.src;
+
+        modal.style.display = "block";
+        modalImg.src = fullImg;
     });
 });
 
