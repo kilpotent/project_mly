@@ -9,11 +9,11 @@
 <body>
     <div class="menu-container">
         <div class="menu-bar">
-            <div>All</div>
-            <div>Branding</div>
-            <div>Logo</div>
-            <div>Prints</div>
-            <div>Packaging</div>
+            <div onclick="goToPortfolio('all')">All</div>
+            <div onclick="goToPortfolio('branding')">Branding</div>
+            <div onclick="goToPortfolio('logo')">Logo</div>
+            <div onclick="goToPortfolio('prints')">Prints</div>
+            <div onclick="goToPortfolio('packaging')">Packaging</div>
         </div>
         <div><img class="logo-img" src="images/white_black-logo.png"></div>
         <div class="menu-bar" id="about">
@@ -28,28 +28,28 @@
         <div class="intro">We make it simple,<br>but unique!</div>
     </div>
 
-    <div class="portfolio-grid">
-        <img src="images/pappoulis.jpg" data-full="images/pappoulis_modal.jpg">
-        <img src="images/harmonbee.jpg" data-full="images/harmonbee_modal.jpg">
-        <img src="images/venona_rossa.jpg">
-        <img src="images/altobajo.jpg"  data-full="images/altobajo_modal.jpg">
-        <img src="images/amaryllis.jpg"  data-full="images/amaryllis_modal.jpg">
-        <img src="images/purple_spot.jpg">
-        <img src="images/tsekoura.jpg" data-full="images/tsekoura_modal.jpg">
-        <img src="images/hens_village.jpg">
-        <img src="images/ga_pr.jpg"  data-full="images/ga_pr_modal.jpg">
-        <img src="images/gn_pcl.jpg" data-full="images/gn_pcl_modal.jpg">
-        <img src="images/grouspas.jpg" data-full="images/grouspas_modal.jpg">
-        <img src="images/tsiatsos.jpg">
-        <img src="images/olympia.jpg">
-        <img src="images/lamia.jpg" data-full="images/lamia_modal.jpg">
-        <img src="images/syrke.jpg" data-full="images/syrke_modal.jpg">
-        <img src="images/christodoulou.jpg" data-full="images/christodoulou_modal.jpg">
-        <img src="images/wooden.jpg">
-        <img src="images/vento.jpg" data-full="images/vento_modal.jpg">
-        <img src="images/starfall.jpg">
-        <img src="images/zaronikola.jpg">
-        <img src="images/melariston.jpg">
+    <div class="portfolio-grid" id="portfolio">
+        <img src="images/pappoulis.jpg" data-full="images/pappoulis_modal.jpg" data-category="branding">
+        <img src="images/harmonbee.jpg" data-full="images/harmonbee_modal.jpg" data-category="branding">
+        <img src="images/venona_rossa.jpg" data-category="logo">
+        <img src="images/altobajo.jpg"  data-full="images/altobajo_modal.jpg" data-category="branding">
+        <img src="images/amaryllis.jpg"  data-full="images/amaryllis_modal.jpg" data-category="branding">
+        <img src="images/purple_spot.jpg" data-category="logo">
+        <img src="images/tsekoura.jpg" data-full="images/tsekoura_modal.jpg" data-category="branding">
+        <img src="images/hens_village.jpg" data-category="logo prints">
+        <img src="images/ga_pr.jpg"  data-full="images/ga_pr_modal.jpg" data-category="branding">
+        <img src="images/gn_pcl.jpg" data-full="images/gn_pcl_modal.jpg" data-category="logo">
+        <img src="images/grouspas.jpg" data-full="images/grouspas_modal.jpg" data-category="branding">
+        <img src="images/tsiatsos.jpg"data-category="packaging">
+        <img src="images/olympia.jpg" data-category="logo">
+        <img src="images/lamia.jpg" data-full="images/lamia_modal.jpg" data-category="branding">
+        <img src="images/syrke.jpg" data-full="images/syrke_modal.jpg" data-category="branding">
+        <img src="images/christodoulou.jpg" data-full="images/christodoulou_modal.jpg" data-category="branding">
+        <img src="images/wooden.jpg" data-category="logo">
+        <img src="images/vento.jpg" data-full="images/vento_modal.jpg" data-category="branding">
+        <img src="images/starfall.jpg" data-category="logo prints">
+        <img src="images/zaronikola.jpg" data-category="logo">
+        <img src="images/melariston.jpg" data-category="logo">
     </div>
     <div id="image-modal" class="modal">
         <span class="close">&times;</span>

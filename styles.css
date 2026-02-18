@@ -110,7 +110,7 @@ body{
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     border-radius: 10px;
 }
 
@@ -159,4 +159,8 @@ body{
     font-size: 40px;
     color: white;
     cursor: pointer;
+}
+
+.portfolio-grid img {
+    
 }
