@@ -3,6 +3,9 @@ const modal = document.getElementById("image-modal");
 const modalImg = document.getElementById("modal-img");
 const closeBtn = document.querySelector(".close");
 
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+
 images.forEach(img => {
     img.addEventListener("click", () => {
         console.log("Clicked image:", img.src);
@@ -54,3 +57,30 @@ function goToPortfolio(category) {
     });
 }
 
+let startY = 0;
+
+modal.addEventListener("touchstart", e => {
+    startY = e.touches[0].clientY;
+});
+
+modal.addEventListener("touchend", e => {
+    const endY = e.changedTouches[0].clientY;
+    if (endY - startY > 100) {
+        modal.style.display = "none";
+    }
+});
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        scrollTopBtn.classList.add("show");
+    } else {
+        scrollTopBtn.classList.remove("show");
+    }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
