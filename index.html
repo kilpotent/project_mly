@@ -26,37 +26,58 @@
         
     <div class="intro-container">
         <div class="intro">We make it simple,<br>but unique!</div>
+        <div class="click-here" onclick="goToPortfolio('all')">Click here for more</div>
     </div>
 
     <div class="portfolio-grid" id="portfolio">
-        <img src="images/pappoulis.jpg" data-full="images/pappoulis_modal.jpg" data-category="branding">
-        <img src="images/harmonbee.jpg" data-full="images/harmonbee_modal.jpg" data-category="branding">
-        <img src="images/venona_rossa.jpg" data-category="logo">
-        <img src="images/altobajo.jpg"  data-full="images/altobajo_modal.jpg" data-category="branding">
-        <img src="images/amaryllis.jpg"  data-full="images/amaryllis_modal.jpg" data-category="branding">
-        <img src="images/purple_spot.jpg" data-category="logo">
-        <img src="images/tsekoura.jpg" data-full="images/tsekoura_modal.jpg" data-category="branding">
-        <img src="images/hens_village.jpg" data-category="logo prints">
-        <img src="images/ga_pr.jpg"  data-full="images/ga_pr_modal.jpg" data-category="branding">
-        <img src="images/gn.jpg" data-full="images/gn_modal.jpg" data-category="logo">
-        <img src="images/grouspas.jpg" data-full="images/grouspas_modal.jpg" data-category="branding">
-        <img src="images/tsiatsos.jpg"data-category="packaging">
-        <img src="images/olympia.jpg" data-category="logo">
-        <img src="images/lamia.jpg" data-full="images/lamia_modal.jpg" data-category="branding">
-        <img src="images/syrke.jpg" data-full="images/syrke_modal.jpg" data-category="branding">
-        <img src="images/christodoulou.jpg" data-full="images/christodoulou_modal.jpg" data-category="branding">
-        <img src="images/wooden.jpg" data-category="logo">
-        <img src="images/vento.jpg" data-full="images/vento_modal.jpg" data-category="branding">
-        <img src="images/starfall.jpg" data-category="logo prints">
-        <img src="images/zaronikola.jpg" data-category="logo">
-        <img src="images/melariston.jpg" data-category="logo">
-        <img src="images/the_count.jpg" data-full="images/the_count_modal.jpg" data-category="branding">
-        <img src="images/psaropoula.jpg" data-category="logo">
+        <img src="images/pappoulis.jpg" alt="Pappoulis branding project" data-full="images/pappoulis_modal.jpg" data-category="branding">
+        <img src="images/harmonbee.jpg" alt="Harmonbee branding project" data-full="images/harmonbee_modal.jpg" data-category="branding">
+        <img src="images/venona_rossa.jpg" alt="Venona Rossa logo design" data-category="logo">
+        <img src="images/altobajo.jpg" alt="Altobajo branding project" data-full="images/altobajo_modal.jpg" data-category="branding">
+        <img src="images/amaryllis.jpg" alt="Amaryllis branding project" data-full="images/amaryllis_modal.jpg" data-category="branding">
+        <img src="images/purple_spot.jpg" alt="Purple Spot logo design" data-category="logo">
+        <img src="images/tsekoura.jpg" alt="Tsekoura branding project" data-full="images/tsekoura_modal.jpg" data-category="branding">
+        <img src="images/hens_village.jpg" alt="Hens Village logo and print design" data-category="logo">
+        <img src="images/ga_pr.jpg" alt="GA PR branding project" data-full="images/ga_pr_modal.jpg" data-category="branding">
+        <img src="images/gn.jpg" alt="GN logo design" data-full="images/gn_modal.jpg" data-category="logo">
+        <img src="images/grouspas.jpg" alt="Grouspas branding project" data-full="images/grouspas_modal.jpg" data-category="branding">
+        <img src="images/tsiatsos.jpg" alt="Tsiatsos packaging design" data-category="packaging">
+        <img src="images/olympia.jpg" alt="Olympia logo design" data-category="logo">
+        <img src="images/lamia.jpg" alt="Lamia branding project" data-full="images/lamia_modal.jpg" data-category="branding">
+        <img src="images/syrke.jpg" alt="Syrke branding project" data-full="images/syrke_modal.jpg" data-category="branding">
+        <img src="images/christodoulou.jpg" alt="Christodoulou branding project" data-full="images/christodoulou_modal.jpg" data-category="branding">
+        <img src="images/wooden.jpg" alt="Wooden logo design" data-category="logo">
+        <img src="images/vento.jpg" alt="Vento branding project" data-full="images/vento_modal.jpg" data-category="branding">
+        <img src="images/starfall.jpg" alt="Starfall logo and print design" data-category="logo">
+        <img src="images/zaronikola.jpg" alt="Zaronikola logo design" data-category="logo">
+        <img src="images/melariston.jpg" alt="Melariston logo design" data-category="logo">
+        <img src="images/the_count.jpg" alt="The Count branding project" data-full="images/the_count_modal.jpg" data-category="branding">
+        <img src="images/psaropoula.jpg" alt="Psaropoula logo design" data-category="logo">
+        <img src="images/sunset_02.jpg" alt="Sunset print design" data-category="prints">
+        <img src="images/koen.jpg" alt="Koen print design" data-category="prints">
+        <img src="images/streetfood.jpg" alt="Street food poster design" data-category="prints">
+        <img src="images/sunset.jpg" alt="Sunset poster print design" data-category="prints">
+        <img src="images/mpaginetas.jpg" alt="Mpaginetas print design" data-category="prints">
+        <img src="images/entertech.jpg" alt="Entertech print design" data-category="prints">
+        <img src="images/divri.jpg" alt="Divri print design" data-category="prints">
+        <img src="images/memories.jpg" alt="Memories logo design" data-category="logo">
+        <img src="images/yaht.jpg" alt="Yaht prints design" data-category="prints">
+        <img src="images/bavar.jpg" alt="Bavar print design" data-category="prints">
+        <img src="images/hens.jpg" alt="Hens Village print design" data-category="prints">
+
     </div>
+
     <div id="image-modal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="modal-img">
     </div>
+
+    <div id="scrollTopBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V4.707l2.147 2.147a.5.5 0 0 0 .706-.708l-3-3a.5.5 0 0 0-.706 0l-3 3a.5.5 0 1 0 .706.708L7.5 4.707V11.5A.5.5 0 0 0 8 12"/>
+        </svg>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
