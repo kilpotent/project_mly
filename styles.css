@@ -6,6 +6,10 @@
 *{
     box-sizing: border-box;
 }
+.social-icon{
+    text-decoration: none;
+    color: white;
+}
 
 body{
     margin: 0;
